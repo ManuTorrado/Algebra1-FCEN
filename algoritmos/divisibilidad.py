@@ -2,7 +2,7 @@
 
 def cuantasVecesAparece(a: any, l:list[any]) -> int:
     res:int = 0
-    for x in list:
+    for x in l:
         if(x == a):
             res +=1
     return res
