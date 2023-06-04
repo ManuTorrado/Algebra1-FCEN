@@ -1,11 +1,16 @@
+from conjuntos import interseccion 
+
 def cuantasVecesAparece(a: any, l:list[any]) -> int:
     res:int = 0
     for x in l:
         if(x == a):
             res +=1
     return res
-    
 
+def borrarRepetidos(a:list) -> list:
+    res:list =  set(a)       
+    return res
+    
 def esDivisiblePor(a:int, b:int) -> bool:
     res:bool = a%b == 0
     return res
@@ -53,31 +58,54 @@ def TFA (a:int) -> list[int]:
         if(esPrimo(aux)):
             if(esDivisiblePor(a, aux)):
                 res.append(aux)
+        aux +=1
         
     
     return res
 
-def cantidadDeDivisores(a:int) ->int:
-    res:int = 0
+def cantidadDeDivisoresPositivos(a:int) ->int:
+    res:int = 1
+    setA:list[int] = borrarRepetidos(TFA(a))
+    for x in setA:
+        res = res*(cuantasVecesAparece(x, TFA(a)) + 1)
+        
+    if(res == 1):
+        res = 2
+    
+    return res
+
+def divisoresDe(n:int) -> list:
+    res:list = []
+    aux:int = 1
+    while(aux <= n):
+        if(esDivisiblePor(n,aux)):
+            res.append(aux)
+        aux += 1
     
     return res
 
 def mcd(a:int, b:int) -> int:
-    res:int = 0
-    aux:int = 1
-    
     if(a%b == 0):
-        res = a
-    
-    return res
+        return b
+    elif(b%a == 0):
+        return a
+    if(a%b == 1 or a%b ==1):
+        return 1      
+    mcd(a, a%b)
+
 
 def sonCoprimos(a:int, b:int) -> bool:
-    res:bool = False
-    
+    res:bool = interseccion(divisoresDe(a),divisoresDe(b)) == [1]
     return res
 
 def sonMultiplos(a:int, b:int) -> bool:
     res:bool = False
     
     return res
+
+
+def esCongruente(a:int, b:int, m:int) -> bool:
+    res:bool =  m%(a-b) == 0  
+    return res
+
 
