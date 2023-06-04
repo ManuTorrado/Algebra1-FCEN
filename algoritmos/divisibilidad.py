@@ -1,5 +1,3 @@
-
-
 def cuantasVecesAparece(a: any, l:list[any]) -> int:
     res:int = 0
     for x in l:
@@ -72,3 +70,14 @@ def mcd(a:int, b:int) -> int:
         res = a
     
     return res
+
+def sonCoprimos(a:int, b:int) -> bool:
+    res:bool = False
+    
+    return res
+
+def sonMultiplos(a:int, b:int) -> bool:
+    res:bool = False
+    
+    return res
+
