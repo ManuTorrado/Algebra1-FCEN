@@ -12,6 +12,8 @@ def esDivisiblePor(a:int, b:int) -> bool:
     res:bool = a%b == 0
     return res
 
+
+# revisa que dos numeros se dividan el uno al otro
 def dobleDivision(a:int, b:int) -> bool:
     res: bool = esDivisiblePor(a,b) and esDivisiblePor(b,a)
     return res
@@ -29,17 +31,20 @@ def esPrimo(a:int) ->bool:
         
     return res
 
-def primosHasta(a:int) -> list[int]:
+
+# lista de numeros primos hasta n
+def primosHasta(n:int) -> list[int]:
     res:list[int] = []
     aux:int = 2
     
-    while(aux < a):
+    while(aux < n):
         if(esPrimo(aux)):
             res.append(aux)
     return res
     
 
-def TCR (a:int) -> list[int]:
+# lista de los divisores primos de un numero por TFA
+def TFA (a:int) -> list[int]:
     res:list[int] = []
     
     if(esPrimo(a)):
@@ -61,5 +66,9 @@ def cantidadDeDivisores(a:int) ->int:
 
 def mcd(a:int, b:int) -> int:
     res:int = 0
+    aux:int = 1
+    
+    if(a%b == 0):
+        res = a
     
     return res
