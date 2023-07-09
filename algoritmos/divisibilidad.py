@@ -74,8 +74,20 @@ def cantidadDeDivisoresPositivos(a:int) ->int:
     
     return res
 
-def divisoresDe(n:int) -> list:
-    res:list = []
+def divisoresDe(n:int) -> list[int]:
+    res:list[int] = []
+    aux:int = 1
+    while(aux <= n):
+        if(esDivisiblePor(n,aux)):
+            res.append(aux)
+            res.append(-aux)
+        aux += 1
+    
+    return res
+
+
+def divisoresPositivos(n:int) -> list[int]:
+    res:list[int] = []
     aux:int = 1
     while(aux <= n):
         if(esDivisiblePor(n,aux)):
@@ -83,6 +95,7 @@ def divisoresDe(n:int) -> list:
         aux += 1
     
     return res
+
 
 def mcd(a:int, b:int) -> int:
     if(a%b == 0):

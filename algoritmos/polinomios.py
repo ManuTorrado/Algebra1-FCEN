@@ -1,3 +1,5 @@
+from divisibilidad import divisoresDe
+
 class Polinomio:
 
     def __init__(self,coeficientes: list[complex or float or int]  ):
@@ -11,7 +13,7 @@ class Polinomio:
         res:int=self.coeficientes[len(self.coeficientes)]
         return res
     
-    def evaluar(self, k:int) ->int:
+    def evaluar(self, k:int) -> int:
         res:int = 0
         i:int = len(self.coeficientes)-1
    
@@ -27,8 +29,22 @@ class Polinomio:
 
 def esRaiz(k:int, f:Polinomio) -> bool:
     res:bool = f.evaluar(k) == 0
-    
     return res
+
+
+def criterioGauss(f:Polinomio) -> list[int]:
+    res:list[int]
+    divisoresPolinomio:list[int] = divisoresDe(f.terminoIndependiente())
+    for divisor in divisoresPolinomio:
+        if(esRaiz(divisor)):
+            res.append(divisor)
+            
+    return res
+
+def euclidesPolinomios(f:Polinomio, q:Polinomio) -> Polinomio:
+    res:Polinomio
+
+
 
 
 # Hay que mejorarlo
