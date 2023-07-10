@@ -6,18 +6,12 @@ class Polinomio:
 
     def __init__(self,coeficientes: list[cuerpo]  ):
       
-        self.coeficientes:list = coeficientes
-        self.terminoIndependiente = self.coeficientes[len(self.coeficientes)]
-        self.coeficientePrincpial = self.coeficientes[0]
+        self.coeficientes:list[cuerpo] = coeficientes
+        self.terminoIndependiente:cuerpo = self.coeficientes[len(self.coeficientes) - 1]
+        self.coeficientePrincpial:cuerpo = self.coeficientes[0]
+        self.grado:int = len(self.coeficientes) - 1
+        self.cuerpo:type = type(self.coeficientes)
         
-        
-    def Grado(self) -> int:
-        return len(self.coeficientes) - 1
-    
-    def cuerpo(self) -> type:
-        res:type = type(self.coeficientes)
-        return res
-    
     
     def evaluar(self, k:int) -> int:
         res:int = 0
@@ -29,15 +23,13 @@ class Polinomio:
             i-=1
         return res
     
-    def Coeficientes(self) -> int:
-        return self.coeficientes
-
 
 def esRaiz(k:int, f:Polinomio) -> bool:
     res:bool = f.evaluar(k) == 0
     return res
 
 
+# Criterio de Gauss, solo para enteros
 def criterioGauss(f:Polinomio) -> list[int]:
     res:list[int]
     divisoresPolinomio:list[int] = divisoresDe(f.terminoIndependiente())
@@ -59,7 +51,7 @@ def mayorCoeficiente(f:Polinomio) -> cuerpo:
     return res
         
 
-
+# Criterio de determinacion de la irreducibilidad de polinomios
 def criterioEisenstein(f:Polinomio) -> bool:
     res:bool = False
     i:int = 0
@@ -82,7 +74,7 @@ def esIrreducible(p: Polinomio) -> bool:
     
 def mayorGrado(f:Polinomio, p:Polinomio) -> Polinomio:
     res:Polinomio
-    if(f.Grado > p.Grado):
+    if(f.grado > p.grado):
         res = f
     else:
         res = p
@@ -94,15 +86,16 @@ def sumaPolinomios(f:Polinomio, p:Polinomio) -> Polinomio:
     res:Polinomio
     aux:list[cuerpo] = []
     if(mayorGrado(f,p) == f):
-        i:int = 0
+        i:int = 1
         for coeficiente in  p.coeficientes:
-            aux.append(coeficiente + f.coeficientes([grado(p)-i]))
+            aux.append(coeficiente + f.coeficientes[i])
             i+=1
     else:
         i:int = 0
         for coeficiente in  f.coeficientes:
-            aux.append(coeficiente + p.coeficientes([grado(f)-i]))
+            aux.append(coeficiente + p.coeficientes[i])
             i+=1   
+    res = Polinomio(aux)
         
     return res
     
@@ -141,3 +134,7 @@ def imprimirPolinomio(p:Polinomio) -> str:
         i-=1 
     return res
 
+
+p = Polinomio([1,2,3])
+f = Polinomio([2,3,4,8])
+print(sumaPolinomios(f,p).coeficientes)
