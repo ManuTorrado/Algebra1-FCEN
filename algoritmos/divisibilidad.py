@@ -122,3 +122,10 @@ def esCongruente(a:int, b:int, m:int) -> bool:
     return res
 
 
+def divideATodos(k, l) -> bool:
+    res:bool = True
+    for number in l:
+        if( not (k%number == 0)):
+            res = False
+            break
+    return res
