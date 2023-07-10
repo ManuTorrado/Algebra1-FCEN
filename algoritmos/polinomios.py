@@ -11,7 +11,20 @@ class Polinomio:
         self.coeficientePrincpial:cuerpo = self.coeficientes[0]
         self.grado:int = len(self.coeficientes) - 1
         self.cuerpo:type = type(self.coeficientes)
-        
+    
+    def __add__(self, otro_polinomio):
+        coeficientes_resultantes = []
+        max_grado = max(len(self.coeficientes), len(otro_polinomio.coeficientes))
+
+        for i in range(max_grado):
+            coeficiente_1 = self.coeficientes[i] if i < len(self.coeficientes) else 0
+            coeficiente_2 = otro_polinomio.coeficientes[i] if i < len(otro_polinomio.coeficientes) else 0
+            coeficiente_resultante = coeficiente_1 + coeficiente_2
+            coeficientes_resultantes.append(coeficiente_resultante)
+
+        return Polinomio(coeficientes_resultantes)
+    
+    
     
     def evaluar(self, k:int) -> int:
         res:int = 0
@@ -79,25 +92,6 @@ def mayorGrado(f:Polinomio, p:Polinomio) -> Polinomio:
     else:
         res = p
     return res
-
-
-# TODO
-def sumaPolinomios(f:Polinomio, p:Polinomio) -> Polinomio:
-    res:Polinomio
-    aux:list[cuerpo] = []
-    if(mayorGrado(f,p) == f):
-        i:int = 1
-        for coeficiente in  p.coeficientes:
-            aux.append(coeficiente + f.coeficientes[i])
-            i+=1
-    else:
-        i:int = 0
-        for coeficiente in  f.coeficientes:
-            aux.append(coeficiente + p.coeficientes[i])
-            i+=1   
-    res = Polinomio(aux)
-        
-    return res
     
 # Asumo f dividio q
 def divisionSintetica(f:Polinomio, q:Polinomio) -> Polinomio:
@@ -116,7 +110,7 @@ def divisionSintetica(f:Polinomio, q:Polinomio) -> Polinomio:
            
         r:Polinomio = Polinomio(coeficientes)       
         
-        res = sumaPolinomios(cociente , divisionSintetica(r, cociente))
+        res = cociente + divisionSintetica(r,cociente)
         
     
     
@@ -134,7 +128,3 @@ def imprimirPolinomio(p:Polinomio) -> str:
         i-=1 
     return res
 
-
-p = Polinomio([1,2,3])
-f = Polinomio([2,3,4,8])
-print(sumaPolinomios(f,p).coeficientes)
