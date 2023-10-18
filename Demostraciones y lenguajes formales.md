@@ -1,3 +1,13 @@
+### Lenguajes Formales
+## Simbolos matematicos
+- $\forall$  Para todo
+- $\exists$  Existe
+- /  Tal que 
+- $\leftrightarrow$  Si y solo si
+- $\therefore$ : Por lo tanto
+- $\in$  Pertenece
+- $\rightarrow$  Implica
+
 ### Proposición
 
 una proposición es una afirmación o enunciado que puede ser clasificado como verdadero o falso, pero no ambos a la vez.
