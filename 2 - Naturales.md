@@ -31,3 +31,15 @@ Como $\lambda-1 \not \in S$, entonces $P(\lambda-1)$ se cumple.
 El **paso inductivo** entonces, nos dice que $P(\lambda)$ es verdadero, pero esto es una **contradicción**. Solo puede ser verdadero si el principio de inducción se cumple.
 
 De esta manera, el principio de inducción no puede fallar.
+
+
+## Inducción II/Fuerte/Completa
+En esta materia les gusta llamar Induccion II/Fuerte/Completa/Global (entre otros nombres) A la induccion aplicada en sucesiones. Pero la realidad es que la induccion es solo una y estos nombres solo los encontramos aqui.
+
+$\text{Sea } p(n), n \in \mathbb{N} \text{ una afirmacion sobre los numeros naturales. Si } p \text{ satisface :}$
+
+- (Casos base):  $p(1)$ y $p(2)$ Son verdaderas
+- (Paso inductivo): $\forall h \in \mathbb{N}, p(h)$  y $p(h+1)$ Verdaderas,   $\Rightarrow p(h+2)$ Verdaderas
+
+Entonces $p(n)$ es verdadero $\forall n \in \mathbb{N}$
+
