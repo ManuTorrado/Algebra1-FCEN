@@ -8,6 +8,8 @@
 - $\in$  Pertenece
 - $\rightarrow$  Implica
 
+# Glosario para demostraciones
+
 ### Proposición
 
 una proposición es una afirmación o enunciado que puede ser clasificado como verdadero o falso, pero no ambos a la vez.
@@ -28,6 +30,7 @@ proposición o teorema auxiliar que se utiliza como paso intermedio para demostr
 
 Consecuencia que uno deduce inmediatamente de un teorema
 
+# Demostraciones
 
 ### Demostración directa
 
