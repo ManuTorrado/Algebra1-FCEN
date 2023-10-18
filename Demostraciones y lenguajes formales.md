@@ -1,5 +1,5 @@
-### Lenguajes Formales
-## Simbolos matematicos
+# Lenguajes Formales y demostraciones
+# Simbolos matematicos
 - $\forall$  Para todo
 - $\exists$  Existe
 - /  Tal que 
