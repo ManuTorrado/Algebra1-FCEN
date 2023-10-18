@@ -4,7 +4,7 @@
 - $\exists$  Existe
 - /  Tal que 
 - $\leftrightarrow$  Si y solo si
-- $\therefore$ : Por lo tanto
+- $\therefore$  Por lo tanto
 - $\in$  Pertenece
 - $\rightarrow$  Implica
 
