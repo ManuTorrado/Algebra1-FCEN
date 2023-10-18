@@ -18,7 +18,7 @@ Vamos a asumir que el paso base y el paso inductivo se cumplen pero que el princ
 
  $P(0)$ es verdadero y $P(n)$ verdadero $\rightarrow$ $P(n+1)$ verdadero, pero existe un $P(n)$ falso. Si pensamos en todos los $n$ tal que $P(n)$ es falso como un conjunto
 
-entonces el conjunto $S = \{n \ |\ P(n) \text{ es falso} \}$ es no vacío (asumiendo que el principio de inducción falla).
+entonces el conjunto $S = \Set{n \ |\ P(n) \text{ es falso} \}$ es no vacío (asumiendo que el principio de inducción falla).
 
 Por el **principio de buena ordenación**, el conjunto $S$ tiene un elemento mínimo $\lambda$.
 
