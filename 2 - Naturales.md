@@ -13,7 +13,7 @@ Resulta que las relaciones de orden ocurren en muchos lados, y para ser existir 
 **Relacion de orden**
 - Reflexividad: $x\leq x$
 - Transitividad:  ($x\leq y$ ^  $y\leq z$) $\rightarrow$ $x \leq z$   
-- Antisimetria: ($x\leq y$ ^  $y\leq x$) $\rightarrow$ $x = z$   
+- Antisimetria: ($x\leq y$ ^  $y\leq x$) $\rightarrow$ $x = y$   
 
 # Principio de buena ordenación
 
