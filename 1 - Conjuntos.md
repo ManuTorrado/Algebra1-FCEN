@@ -38,3 +38,5 @@ Si  $B = \Set{ 1,2,3 \}$ Entonces  $\emptyset \not\in A$
 - ${\in}$ Pertenencia a un conjunto
 - $\notin$ No pertenencia a un conjunto
 - $\subset$ Subconjunto
+- $|A|$ Cardinal de un conjunto
+- `#A` Otra forma de notar un cardinal
