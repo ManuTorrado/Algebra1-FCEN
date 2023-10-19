@@ -4,7 +4,7 @@ Dado un conjunto **finito** de numeros naturales o enteros. Al ser finito podemo
 Dado un conjunto $A \not = \emptyset$ / $A \subset \mathbb{N}$
 $\text{    }\rightarrow \text{    }$  $\exists n \in A / n \leq y \text{    }$ $\text{    }\forall y \in A$
 
-> Y que tiene de importanten esto?
+> Y que tiene de importante esto?
 
 Nos permite ordenar los numeros de un conjunto, creando una **relacion de orden**. Un ejemplo de relacion de orden son los simbolos $\leq$ y $\geq$. Que sentido tendrian estos simbolos si los numeros no estan ordenados?
 
