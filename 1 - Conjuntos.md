@@ -33,6 +33,7 @@ Si  $B = \Set{ 1,2,3 \}$ Entonces  $\emptyset \not\in A$
 - $\cap$ Interseccion
 - $\cup$ Union
 - $\setminus$ Diferencia de conjuntos
+- $\symdif$ Diferencia simetrica
 - $^{\complement}$ Complemento
 - ${\varnothing}$ Conjunto vacio
 - ${\in}$ Pertenencia a un conjunto
