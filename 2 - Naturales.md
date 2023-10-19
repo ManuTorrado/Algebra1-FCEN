@@ -1,5 +1,5 @@
 # Ordenando Numeros
-Dado un conjunto **finito** de numeros naturales o enteros. Al ser finito podemos afirmar que existe un **elemento minimo**, es decir, que sera mas chico que el resto de elementos del conjunto (Tengamos en cuenta que en este tipo de conjuntos los elementos no se pueden repetir). Expresemos esto formalmente:
+Dado un conjunto **finito** de numeros naturales o enteros. Al ser finito podemos afirmar que existe un **elemento minimo**, es decir, que sera mas chico que el resto de elementos del conjunto (Tengamos en cuenta que en este tipo de conjuntos los elementos no se pueden repetir) Esto se llama **Principio de buena ordenacion** y la definiremos mas adelante. Expresemos esto formalmente:
 
 Dado un conjunto $A \not = \emptyset$ / $A \subset \mathbb{N}$
 $\text{    }\rightarrow \text{    }$  $\exists n \in A / n \leq y \text{    }$ $\text{    }\forall y \in A$
