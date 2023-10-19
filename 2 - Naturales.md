@@ -23,12 +23,14 @@ El **principio del buen orden** afirma que en cualquier conjunto de número
 Conoces la siguiente formula? Parece una monstruosidad pero no te asustes:
 $$1 + 2 + 3 + ... + n = ∑_{i=1}^{n} i = n(n+1)/2$$
 
-Se llama Suma de Gauss. Sirve para darnos la suma de los n numeros que le demos. Es decir, si n = 100, me devolvera la suma de 1 + 2 + 3 + 4 ... + 100
+Se llama Suma de Gauss. Sirve para darnos la suma de los n numeros que le demos. Es decir, si n = 100, me devolvera la suma de 1 + 2 + 3 + 4 ... + 100.
+Sabemos que la suma de Gauss funciona, pero como lo sabemos? Como podemos estar seguros de que esta suma sirve siempre y para todos los naturales?
+La razon por la que podemos confiar en la suma de Gauss es gracias a que se puede realizar una **demostracion por induccion**.
 
 
-> Y como se que el principio de induccion no falla?
 
-*Citado del libro Introduction to abstract algebra de Jonathan Smith.*
+
+
 
 **Paso base**: enuncia que la propiedad $P(0)$ se cumple.
 
@@ -36,7 +38,10 @@ Se llama Suma de Gauss. Sirve para darnos la suma de los n numeros que le demos.
 
 **Principio de inducción**: Enuncia que si el paso base y el paso inductivo se cumplen, entonces $P(n)$ se cumple para todo $n \in \mathbb{N}$.
 
-**Demostrando el principio de inducción**
+> Y como se que el principio de induccion no falla?
+
+# Demostrando el principio de inducción
+*Citado del libro Introduction to abstract algebra de Jonathan Smith.*
 
 Vamos a asumir que el paso base y el paso inductivo se cumplen pero que el principio de inducción no lo hace, es decir que:
 
