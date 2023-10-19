@@ -14,7 +14,7 @@ Sean $0≤k≤n$ con $n \in \mathbb{N}_0$
 - $\dbinom{n}{0} = 1 \implies \dbinom{0}{0} = 1$
 - $\dbinom{n}{1} = n = \dbinom{n}{-1}$
 - $\dbinom{n}{k} = \dbinom{n}{n-k}$
-- La cantidad total de subconjuntos que tiene un conjunto con $n$ elementos es #$p(A) = 2^n$. Todos los subconjuntos puedo clasificarlos disjuntamente por su cardinal, conjuntos con 1 elemento, con 2 elementos, con 3 elementos, con $n$ elementos, y así. Entonces el cardinal de partes de $A$ es igual a la suma de los números combinatorios.
+- La cantidad total de subconjuntos que tiene un conjunto con $n$ elementos es $|p(A)| = 2^n$. Todos los subconjuntos puedo clasificarlos disjuntamente por su cardinal, conjuntos con 1 elemento, con 2 elementos, con 3 elementos, con $n$ elementos, y así. Entonces el cardinal de partes de $A$ es igual a la suma de los números combinatorios.
 
 $$
 |p(A)| = 2^n = \binom{n}{0} + \binom{n}{1} + ... + \binom{n}{n} = \sum_{k=0}^n \binom{n}{k}
