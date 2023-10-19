@@ -25,18 +25,17 @@ $$1 + 2 + 3 + ... + n = ∑_{i=1}^{n} i = n(n+1)/2$$
 
 Se llama Suma de Gauss. Sirve para darnos la suma de los n numeros que le demos. Es decir, si n = 100, me devolvera la suma de 1 + 2 + 3 + 4 ... + 100.
 Sabemos que la suma de Gauss funciona, pero como lo sabemos? Como podemos estar seguros de que esta suma sirve siempre y para todos los naturales?
-La razon por la que podemos confiar en la suma de Gauss es gracias a que se puede realizar una **demostracion por induccion**.
+La razon por la que podemos confiar en la suma de Gauss es gracias a que se puede realizar una **demostracion por induccion**. Al final de este capitulo haremos la demostracion de la suma de Gauss por induccion.
 
 
-
-
-
+## Pasos para una demostracion por induccion
 
 **Paso base**: enuncia que la propiedad $P(0)$ se cumple.
 
 **Paso inductivo**: Enuncia que si la propiedad $P(n)$ es verdadera, entonces $P(n+1)$ también lo es.
 
 **Principio de inducción**: Enuncia que si el paso base y el paso inductivo se cumplen, entonces $P(n)$ se cumple para todo $n \in \mathbb{N}$.
+
 
 > Y como se que el principio de induccion no falla?
 
@@ -71,4 +70,73 @@ $\text{Sea } p(n), n \in \mathbb{N} \text{ una afirmacion sobre los numeros natu
 - (Paso inductivo): $\forall h \in \mathbb{N}, p(h)$  y $p(h+1)$ Verdaderas,   $\Rightarrow p(h+2)$ Verdaderas
 
 Entonces $p(n)$ es verdadero $\forall n \in \mathbb{N}$
+
+
+
+## Demostración de la Suma de Gauss por Inducción
+
+Queremos demostrar que la suma de los primeros \(n\) números naturales es igual a $\(\frac{n(n+1)}{2}\)$ utilizando el principio de inducción matemática.
+
+**Paso 1: Caso Base (n = 1):**
+
+Cuando $\(n = 1\)$, tenemos:
+
+$$\[
+1 = \frac{1(1+1)}{2}
+\]$$
+
+Esto demuestra que la fórmula es válida para \(n = 1\).
+
+**Paso 2: Hipótesis de Inducción:**
+
+Suponemos que la fórmula es válida para un valor arbitrario \(k\), es decir, suponemos que:
+
+$$\[
+1 + 2 + 3 + \ldots + k = \frac{k(k+1)}{2}
+\]$$
+
+**Paso 3: Paso Inductivo:**
+
+Queremos demostrar que la fórmula también es válida para \(k+1\). Entonces, sumamos \((k+1)\) al lado izquierdo de la ecuación:
+
+$$\[
+1 + 2 + 3 + \ldots + k + (k+1)
+\]$$
+
+Por nuestra hipótesis de inducción, sabemos que:
+
+$$\[
+1 + 2 + 3 + \ldots + k = \frac{k(k+1)}{2}
+\]$$
+
+Por lo tanto, podemos escribir:
+
+$$\[
+1 + 2 + 3 + \ldots + k + (k+1) = \frac{k(k+1)}{2} + (k+1)
+\]$$
+
+Factorizamos \((k+1)\) en el lado derecho:
+
+$$\[
+1 + 2 + 3 + \ldots + k + (k+1) = \frac{k(k+1)}{2} + \frac{2(k+1)}{2}
+\]$$
+
+Combinamos los términos del lado derecho:
+
+$$\[
+1 + 2 + 3 + \ldots + k + (k+1) = \frac{k(k+1) + 2(k+1)}{2}
+\]$$
+
+Factor común \((k+1)\) en el numerador:
+
+$$\[
+1 + 2 + 3 + \ldots + k + (k+1) = \frac{(k+1)(k+2)}{2}
+\]$$
+
+Esto demuestra que la fórmula es válida para \(k+1\).
+
+**Conclusión:**
+
+Hemos demostrado la fórmula de la suma de Gauss por inducción para todos los números naturales $\(n\)$. Por lo tanto, la suma de los primeros $\(n\)$ números naturales es igual a $\(\frac{n(n+1)}{2}\)$ para cualquier $\(n\)$.
+
 
