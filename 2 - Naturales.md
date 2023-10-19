@@ -1,3 +1,20 @@
+# Ordenando Numeros
+Dado un conjunto **finito** de numeros naturales o enteros. Al ser finito podemos afirmar que existe un **elemento minimo**, es decir, que sera mas chico que el resto de elementos del conjunto (Tengamos en cuenta que en este tipo de conjuntos los elementos no se pueden repetir). Expresemos esto formalmente:
+
+Dado un conjunto $A \not = \emptyset$ / $A \subset \mathbb{N}$
+$\text{    }\rightarrow \text{    }$  $\exists n \in A / n \leq y \text{    }$ $\text{    }\forall y \in A$
+
+> Y que tiene de importanten esto?
+
+Nos permite ordenar los numeros de un conjunto, creando una **relacion de orden**. Un ejemplo de relacion de orden son los simbolos $\leq$ y $\geq$. Que sentido tendrian estos simbolos si los numeros no estan ordenados?
+
+Resulta que las relaciones de orden ocurren en muchos lados, y para ser existir tienen que cumplir 3 condiciones:
+
+**Relacion de orden**
+- Reflexividad: $x\leq x$
+- Transitividad:  ($x\leq y$ ^  $y\leq z$) $\rightarrow$ $x \leq z$   
+- Antisimetria: ($x\leq y$ ^  $y\leq x$) $\rightarrow$ $x = z$   
+
 # Principio de buena ordenación
 
 El **principio del buen orden** afirma que en cualquier conjunto de números naturales existe un mínimo, es decir, un número no mayor que algún otro del resto, siempre y cuando dicha colección no esté vacía. Esto diferencia al conjunto de los números naturales de otros conjuntos ordenados de números, como por ejemplo los números enteros o los números reales. El principio de buena ordenación es equivalente al principio de inducción: uno puede demostrarse a partir del otro.
