@@ -20,6 +20,13 @@ Resulta que las relaciones de orden ocurren en muchos lados, y para ser existir 
 El **principio del buen orden** afirma que en cualquier conjunto de números naturales existe un mínimo, es decir, un número no mayor que algún otro del resto, siempre y cuando dicha colección no esté vacía. Esto diferencia al conjunto de los números naturales de otros conjuntos ordenados de números, como por ejemplo los números enteros o los números reales. El principio de buena ordenación es equivalente al principio de inducción: uno puede demostrarse a partir del otro.
 
 # Principio de Inducción
+Conoces la siguiente formula? Parece una monstruosidad pero no te asustes:
+$$1 + 2 + 3 + ... + n = ∑_{i=1}^{n} i = n(n+1)/2$$
+
+Se llama Suma de Gauss. Sirve para darnos la suma de los n numeros que le demos. Es decir, si n = 100, me devolvera la suma de 1 + 2 + 3 + 4 ... + 100
+
+
+> Y como se que el principio de induccion no falla?
 
 *Citado del libro Introduction to abstract algebra de Jonathan Smith.*
 
