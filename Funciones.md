@@ -7,9 +7,10 @@
 Este ya lo vimos anteriormente, pero repasemos
 
 **Relacion de orden**
-- Reflexividad: $x\leq x$
-- Transitividad:  ($x\leq y$ ^  $y\leq z$) $\rightarrow$ $x \leq z$   
-- Antisimetria: ($x\leq y$ ^  $y\leq x$) $\rightarrow$ $x = z$   
+
+- Reflexividad: $x \mathcal{R}  x$
+- Transitividad:  ($x \mathcal{R} y$ ^  $y \mathcal{R} z$) $\rightarrow$ $x \mathcal{R} z$   
+- Antisimetria: ($x \mathcal{R} y$ ^  $y \mathcal{R} x$) $\rightarrow$ $x = z$   
 
 
 ## Relaciones de equivalencia
