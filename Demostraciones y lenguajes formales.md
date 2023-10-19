@@ -1,5 +1,7 @@
-### Lenguajes Formales
-## Simbolos matematicos
+# Lenguajes Formales y demostraciones
+Los lenguajes formales son necesarios para plasmar el razonamiento logico y evitar las ambiguedades del lenguaje humano. Por eso lo vamos a ver presente en cosas como demostraciones matematicas o lenguajes de programacion, donde se necesita de una precision exacta al comunicar.
+
+# Simbolos matematicos
 - $\forall$  Para todo
 - $\exists$  Existe
 - /  Tal que 
@@ -7,6 +9,8 @@
 - $\therefore$  Por lo tanto
 - $\in$  Pertenece
 - $\rightarrow$  Implica
+
+# Glosario para demostraciones
 
 ### Proposición
 
@@ -28,6 +32,7 @@ proposición o teorema auxiliar que se utiliza como paso intermedio para demostr
 
 Consecuencia que uno deduce inmediatamente de un teorema
 
+# Demostraciones
 
 ### Demostración directa
 
