@@ -1,3 +1,4 @@
+⚠️ Volverlo mas sencillo
 # Número combinatório
 
 $\binom{n}{k}$ es la cantidad de subconjuntos de $k$ elementos que tiene un conjunto con $n$ elementos.
