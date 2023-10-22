@@ -7,7 +7,10 @@ De cuantas maneras posibles puedo ordenar estos 5 emojis? : {👽 ,👾,💥,�
 
 Si tengo que elegir un primer elemento para ordenar, tengo 5 opciones. Supongamos que elijo 🧶.
 
+
 Entonces el 🧶 queda descartado. Para el siguiente elemento tengo 4 opciones {👽 ,👾,💥,💠}
+
+
 
 Si elijo el 👾,  me quedaría 🧶, 👾, _ , _ , _. Es decir, 3 posibilidades para el siguiente elemento, luego para el próximo 2 y por ultimo 1.
 
