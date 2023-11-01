@@ -61,6 +61,7 @@ El **paso inductivo** entonces, nos dice que $P(\lambda)$ es verdadero, pero est
 De esta manera, el principio de inducción no puede fallar.
 
 
+
 ## Inducción II/Fuerte/Completa
 En esta materia les gusta llamar Induccion II/Fuerte/Completa/Global (entre otros nombres) A la induccion aplicada en sucesiones. Pero la realidad es que la induccion es solo una y estos nombres solo los encontramos aqui.
 
@@ -140,3 +141,10 @@ Esto demuestra que la fórmula es válida para \(k+1\).
 Hemos demostrado la fórmula de la suma de Gauss por inducción para todos los números naturales $\(n\)$. Por lo tanto, la suma de los primeros $\(n\)$ números naturales es igual a $\(\frac{n(n+1)}{2}\)$ para cualquier $\(n\)$.
 
 
+
+## El Conjunto Inductivo
+
+Sea $H \subset \mathbb{R}$  un conjunto, se dice que $H$ es un conjunto inductivo si se cumplen las condiciones siguientes
+
+- $1 \in H$
+- $\forall x,  x \in H \Rightarrow x+1 \in H$
