@@ -8,7 +8,8 @@ $\text{    }\rightarrow \text{    }$  $\exists n \in A / n \leq y \text{    }$ $
 
 Nos permite ordenar los numeros de un conjunto, creando una **relacion de orden**. Un ejemplo de relacion de orden son los simbolos $\leq$ y $\geq$. Que sentido tendrian estos simbolos si los numeros no estan ordenados?
 
-Resulta que las relaciones de orden ocurren en muchos lados, y para ser existir tienen que cumplir 3 condiciones:
+Resulta que las relaciones de orden ocurren en muchos lados, y para ser existir tienen que cumplir 3 condiciones: Reflexividad, Transitividad y Antisimetria. Si no se entiende del todo no pasa nada, se va a profundizar en esto mas adelante.
+Aca va un ejemplo de como es la relacion de orden con $\leq$ y $\geq$.
 
 **Relacion de orden**
 - Reflexividad: $x\leq x$
