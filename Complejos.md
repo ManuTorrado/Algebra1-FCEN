@@ -23,7 +23,8 @@ $z = a + bi$ con $\ a,b \in \mathbb{R}$ y ademas $i \not \in \mathbb{R}$
 
 Entonces estamos en condiciones de decir que $z \in \mathbb{C}$
 
-y volviendo al problema anterior ($x^2 = -1$) ya tenemos solucion! $x = i$
+y volviendo al problema anterior ($x^2 = -1$) ya tenemos solucion!
+$x = i$
 $$ i^2 = -1$$
 
 ⚠️ Obs: vamos a decir que $i^2 = -1$ en lugar de $i = \sqrt{-1}$. Ya que **la raiz cuadrada solo existe para los numeros reales**:
@@ -49,7 +50,7 @@ $$z = r.cos(\theta) + i.sen(\theta).r$$
 
 $$e^{\theta i} = \cos(\theta) + i \sin(\theta) \ \forall \theta \in \R$$
 
-![Rotando de un numero complejo](/img/euler-rotation.gif)
+![Rotando de un numero complejo](./img/euler-rotation.gif)
 
 ### Teorema fundamental del algebra
 
